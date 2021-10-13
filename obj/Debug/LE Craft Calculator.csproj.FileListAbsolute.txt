@@ -1,0 +1,10 @@
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\bin\Debug\LE Craft Calculator.exe.config
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\bin\Debug\LE Craft Calculator.exe
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\bin\Debug\LE Craft Calculator.pdb
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE Craft Calculator.csproj.AssemblyReference.cache
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE_Craft_Calculator.Properties.Resources.resources
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE Craft Calculator.csproj.GenerateResource.cache
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE Craft Calculator.csproj.CoreCompileInputs.cache
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE Craft Calculator.exe
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE Craft Calculator.pdb
+D:\c-projs\LE Craft Calculator\LE Craft Calculator\obj\Debug\LE_Craft_Calculator.Form1.resources
