@@ -52,7 +52,6 @@ namespace LE_Craft_Calculator
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -90,7 +89,7 @@ namespace LE_Craft_Calculator
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.checkBox1.ForeColor = System.Drawing.Color.Black;
             this.checkBox1.Location = new System.Drawing.Point(537, 108);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(176, 24);
@@ -164,7 +163,7 @@ namespace LE_Craft_Calculator
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(1, 286);
+            this.label7.Location = new System.Drawing.Point(1, 306);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 24);
             this.label7.TabIndex = 19;
@@ -285,7 +284,7 @@ namespace LE_Craft_Calculator
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(184, 286);
+            this.label11.Location = new System.Drawing.Point(184, 306);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(20, 24);
             this.label11.TabIndex = 32;
@@ -301,23 +300,11 @@ namespace LE_Craft_Calculator
             this.numericUpDown9.ValueChanged += new System.EventHandler(this.numericUpDown9_ValueChanged);
             this.numericUpDown9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numericUpDown9_KeyPress);
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label12.Location = new System.Drawing.Point(578, 127);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 17);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "(not available)";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 319);
-            this.Controls.Add(this.label12);
+            this.ClientSize = new System.Drawing.Size(727, 363);
             this.Controls.Add(this.numericUpDown9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.numericUpDown8);
@@ -382,7 +369,6 @@ namespace LE_Craft_Calculator
         private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.Label label12;
     }
 }
 

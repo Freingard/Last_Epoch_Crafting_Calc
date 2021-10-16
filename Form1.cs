@@ -17,6 +17,7 @@ namespace LE_Craft_Calculator
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             checkBox2.Checked = true;
+            checkBox1.Checked = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,10 +27,19 @@ namespace LE_Craft_Calculator
             int[] initAffixes = { Convert.ToInt32(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value), Convert.ToInt32(numericUpDown3.Value), Convert.ToInt32(numericUpDown4.Value) };
             int[] desiredAffixes = { Convert.ToInt32(numericUpDown5.Value), Convert.ToInt32(numericUpDown6.Value), Convert.ToInt32(numericUpDown7.Value), Convert.ToInt32(numericUpDown8.Value) };
             int instability = Convert.ToInt32(numericUpDown9.Value);
-            //var lastPoint = new CraftingPoint();
-            var lastPoint = calc.Calculating(instability, initAffixes, desiredAffixes, checkBox2.Checked);
-           // results = "probability="+lastPoint.probability*100+"%";
-           // results += lastPoint.howToCraftResult;
+            var lastPoint = new CraftingPoint();
+
+            if(!checkBox1.Checked)//глифы Стабильности отключены
+            {
+                lastPoint = calc.CalculatingNoStabilityGlyph(instability, initAffixes, desiredAffixes, checkBox2.Checked);
+            } else if(!checkBox2.Checked)//глифы стабильности включены, глифы защиты отключены
+            {
+                lastPoint = calc.CalculatingWithStabilityGlyphOnly(instability, initAffixes, desiredAffixes);
+            } else//все глифы включены
+            {
+                lastPoint = calc.CalculatingWithBothGlyphs(instability, initAffixes, desiredAffixes);
+                //Console.WriteLine("asdasdnjk=" + calc.numberOfStabilityGlyphUsed);
+            }
             label1.Text = lastPoint.howToCraftResult;
             label11.Text = lastPoint.probability * 100 + "%";
         }
